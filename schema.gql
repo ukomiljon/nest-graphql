@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type StudentType {
+  id: ID!
+  name: String!
+  age: Float!
+  email: String!
+  course: Float!
+}
+
+type Query {
+  students: [StudentType!]!
+}
+
+type Mutation {
+  createStudent(input: StudentInput!): StudentType!
+}
+
+input StudentInput {
+  name: String!
+  age: Float!
+  email: String!
+  course: Float!
+}
